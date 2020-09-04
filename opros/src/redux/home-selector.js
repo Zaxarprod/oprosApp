@@ -4,6 +4,6 @@ export const getSlidersSelector = (state) =>{
     return state.home.sliders
 }
 
-export const getSliders = createSelector(getSlidersSelector, (sliders)=>{
-    return sliders
-});
+export const getCarouselSelector = (state) =>{
+    return state.home.carousel
+}

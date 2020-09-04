@@ -7,10 +7,10 @@ import {useSelector} from "react-redux";
 import {getSliders, getSlidersSelector} from "../../redux/home-selector";
 
 export const CarouselBlock = () => {
-    const sliders = useSelector(getSliders)
+    const sliders = useSelector(getSlidersSelector)
     return (
-        <Row className={style.carouselBlock}>
-            <Col xs={24} sm={24} md={24} lg={24} xl={24} className={style.brandBlock}>
+        <Row>
+            <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Carousel autoplay>
                     {
                         sliders.map((slide)=>{
